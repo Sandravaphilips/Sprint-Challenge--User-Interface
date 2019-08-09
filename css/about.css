@@ -100,7 +100,7 @@ header section {
     flex-direction: row;
     justify-content: space-between;
     padding: 20px 2%;
-    margin-bottom: 10px;
+    
 }
 .second-content section:last-child, .fourth-content section:last-child {
     margin-left: 24px;
