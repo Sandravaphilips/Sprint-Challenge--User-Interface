@@ -70,7 +70,7 @@ p {
     width: 800px;
     margin: 0 auto;
 }
-
+/* HEADER */
 /* NAVIGATION */
 nav {
     display: flex;
@@ -83,80 +83,76 @@ nav a {
     text-decoration: none;
     color: black;
 }
-/* MAIN */
-.top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
+header section {
     margin-top: 20px;
-    border-bottom: 1px dashed black;
-}
-
-.top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
-}
-
-.middle-content {
     margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    padding-left: 2%;
 }
-
-.middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
-}
-
-.middle-content .boxes {
+/* MAIN */
+.first-content, .third-content {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 2%;
 }
-
-.middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
-    color: white;
+.second-content, .fourth-content {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 2%;
+    margin-bottom: 10px;
 }
-
-
-
-.bottom-content {
-    display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
+.second-content section:last-child, .fourth-content section:last-child {
+    margin-left: 24px;
 }
-
-.bottom-content .text-container {
-    padding-right: 4%;
+section button {
+    margin-top: 10px;
 }
-
-.bottom-content .text-container:last-child {
-    padding-right: 0;
+button {
+    border-radius: 7px;
+    height: 30px;
 }
-/* FOOTER */
-footer {
+hr {
+    border : 1px dashed lightgray;
     width: 100%;
-    background: black;
+}
+.horizontal {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.horizontal hr {
+    width: 46%;
+    border: 1px dashed gray;
+    margin-right: 2%;
 }
 
-footer nav {
-    width: 60%;
+
+footer {
+    margin-top: 30px;
+}
+footer section {
+    padding-left: 2%;
+}
+
+footer div {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     padding: 20px 2%;
     font-size: 14px;
+    background-color: black;
+    margin-top: 50px;
+}
+footer div nav {
+    width: 60%;
 }
 
 footer nav a {
+    
     color: white;
     text-decoration: none;
 }
